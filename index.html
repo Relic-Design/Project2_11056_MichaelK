@@ -6,34 +6,57 @@
     <meta charset="utf-8">
     <meta name="import" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </head>
-<div class="bg-primary text-white p-5 text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this page to see the responsive effect!</p>
-  </div>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150x50" alt="Logo"></a>
+        <!-- Hamburger menu for mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-        <p>It is the most populous city in the United Kingdom,
-        with a metropolitan area of over 13 million inhabitants.</p>
-      </div>
-      <div class="col-sm-4">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p>
-        <p>The Paris area is one of the largest population centers in Europe,
-        with more than 12 million inhabitants.</p>
-      </div>
-      <div class="col-sm-4">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-        <p>It is the center of the Greater Tokyo Area,
-        and the most populous metropolitan area in the world.</p>
+    <!-- Main Content -->
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <h1>Welcome to my Bootstrap website!</h1>
+          <p>This is some sample text for the main content of my website.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <img src="https://via.placeholder.com/150x150" alt="Logo">
+        </div>
       </div>
     </div>
-  </div>
+  
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSqv0" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+  </html>
+  </html>
