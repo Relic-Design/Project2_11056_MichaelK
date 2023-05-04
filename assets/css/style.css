@@ -1,10 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 16px;
-    background-color: darkgrey;
+    background-color: lightgray;
+    font-family: "skolar-sans-latin", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 main {
     padding-top: 20px;
+    border-top: white 15px;
+    border-style: solid;
 }
+
 header {
     background-color: #B15858;
     position: sticky; 
@@ -12,6 +23,96 @@ header {
     border-bottom: white 15px;
     border-style: solid;
 }
+
+header img {
+    height: 150px;
+    width: 100px;
+}
+
+.feature {
+    max-height: 350px;
+    width: auto;
+    border: #25242D;
+    border-style: solid;
+}
+
+ul {
+    padding-right: 2em;
+}
+
+li {
+    padding-right: 0.8em;
+}
+
+.hero {
+    display: flex;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    min-height: calc(250px + 20vw);
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    background-color: #25242D;
+    margin: 0px;
+    padding: 0px;
+    min-height: calc(50px + 10vw);
+    justify-content: center;
+    align-items: center;
+    font-size: calc(3vw + 35px);
+}
+
+h1 {
+    font-size: calc(6vw + 5px);
+    color: #DA3939;
+    text-align: center;
+    font-family: "fleisch-wolf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: calc(3vw + 35px);
+    color: #DA3939;
+    text-align: center;
+    font-family: "fleisch-wolf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: calc(1vw + 35px);
+    color: #DA3939;
+    text-align: center;
+    font-family: "fleisch-wolf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: calc(0.4vw + 12px);
+}
+
+footer {
+    display: flex;
+    background-color: #25242D;
+    max-height: 15em;
+    color: #FFFFFF;
+    padding-top: 0.1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10em;
+}
+
 .navbar-brand {
     padding: 10px;
 }
@@ -31,49 +132,11 @@ header {
     flex-grow: 0;
     align-items: center;
 }
-header img {
-    height: 150px;
-    width: 100px;
-}
-ul {
-    padding-right: 2em;
-}
-li {
-    padding-right: 0.8em;
-}
-.hero {
-    display: flex;
-    background-image: url(../images/hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    min-height: calc(175px + 25vw);
-    justify-content: center;
-    align-items: center;
-    opacity: 100%;
-}
-h1 {
-    font-size: calc(6vw + 1px);
-    color: #DA3939;
-    text-align: center;
-    font-family: "fleisch-wolf", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-footer {
-    background-color: #25242D;
-    max-height: 15em;
-    color: #FFFFFF;
-    padding-top: 0.1em;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    min-height: 10em;
+.row {
+    padding-bottom: calc(0.5vw + 10px);
+    padding-top: calc(0.5vw + 10px);
+    border-bottom: #25242D 5px;
+    border-style: solid;
 }
 
 @media (min-width: 768px) {
@@ -83,3 +146,9 @@ footer {
     flex-basis: 0;
 }
 }
+
+@media (max-width: 600px) {
+    .feature {
+    max-height: 300px;
+    }
+    }
