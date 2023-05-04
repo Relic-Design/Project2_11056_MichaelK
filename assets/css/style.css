@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* This one line of code saved me lots of attempts to learn java script for smooth scrolling*/
 }
 
 body {
@@ -16,7 +16,7 @@ main {
     border-style: solid;
 }
 
-header {
+header { /*The template I generated didn't use a header tag, but for the sake of better control and Semantic HTML, I added one to the code*/
     background-color: #B15858;
     position: sticky; 
     top: 0;
@@ -30,7 +30,7 @@ header img {
 }
 
 .feature {
-    max-height: 350px;
+    max-height: 375px;
     width: auto;
     border: #25242D;
     border-style: solid;
@@ -44,7 +44,7 @@ li {
     padding-right: 0.8em;
 }
 
-.hero {
+.hero { /* This code is partly from my first assignment, as the application is quite similar. In this case I had to learn how to correctly position a background image and use flexbox instead of grid*/
     display: flex;
     background-image: url(../images/hero.jpg);
     background-size: cover;
@@ -71,7 +71,7 @@ li {
 }
 
 h1 {
-    font-size: calc(6vw + 5px);
+    font-size: calc(6vw + 5px); /* Using the calc function has been an extremely helpful technique for precisely adjusting the size of my font at different reactive sizes.*/
     color: #DA3939;
     text-align: center;
     font-family: "fleisch-wolf", sans-serif;
@@ -101,7 +101,7 @@ p {
     font-size: calc(0.4vw + 12px);
 }
 
-footer {
+footer { /* Similar to my hero content, my footer was partly brought over from assignment one, as with a focus on the code and experimentation there wasn't much content to place on the footer.*/
     display: flex;
     background-color: #25242D;
     max-height: 15em;
@@ -113,7 +113,9 @@ footer {
     min-height: 10em;
 }
 
-.navbar-brand {
+/* Below is all the changes I made to the bootstrap tags. I didn't have to change them much, but I adjusted a couple things to suit my site.*/
+/* I think I have learnt the basics of using bootstrap for navigation and to set up a grid, and it saved me a ton of time creating the css for these elements.*/
+.navbar-brand { 
     padding: 10px;
 }
 .nav-link {
@@ -139,6 +141,7 @@ footer {
     border-style: solid;
 }
 
+/* Here I added a couple adjustments to the way the navbar worked, as the template ChatGPT generated had some issues with the hamburger dropdown.*/
 @media (min-width: 768px) {
 .navbar-expand-md 
 .navbar-collapse {
@@ -147,6 +150,7 @@ footer {
 }
 }
 
+/*This helps my images display at an appropriate size for smaller screens.*/
 @media (max-width: 600px) {
     .feature {
     max-height: 300px;
